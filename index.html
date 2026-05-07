@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICSI301</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f0f0f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      color: #1a1a1a;
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #2d5a1b;
+      margin-bottom: 40px;
+    }
+
+    .list {
+      width: 100%;
+      max-width: 560px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .row {
+      background: #fff;
+      border-radius: 14px;
+      padding: 18px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+    }
+
+    .row-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a1a;
+    }
+
+    .row-sub {
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 2px;
+    }
+
+    .btns {
+      display: flex;
+      gap: 8px;
+      flex-shrink: 0;
+    }
+
+    a.btn {
+      padding: 8px 16px;
+      background: #2d5a1b;
+      color: #fff;
+      border-radius: 9px;
+      font-size: 13px;
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.2s;
+    }
+    a.btn:hover { background: #244d15; }
+
+    .api-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+    }
+
+    .api-row {
+      background: #fff;
+      border-radius: 14px;
+      padding: 18px 20px;
+      box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+    }
+  </style>
+</head>
+<body>
+
+  <h1>ICSI301</h1>
+
+  <div class="list">
+
+    <div class="row">
+      <div>
+        <div class="row-title">HTML and CSS</div>
+        <div class="row-sub">Нэвтрэх болон бүртгүүлэх хуудас</div>
+      </div>
+      <div class="btns">
+        <a href="login.html" class="btn">Нэвтрэх</a>
+        <a href="signup.html" class="btn">Бүртгүүлэх</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <div class="row-title">JavaScript — Template Processor</div>
+        <div class="row-sub">cs142 загварын процессор болон шүүлтүүр</div>
+      </div>
+      <div class="btns">
+        <a href="https://github.com/brainGP/Pharmacy" target="_blank" class="btn">GitHub</a>
+      </div>
+    </div>
+
+    <div class="row">
+      <div>
+        <div class="row-title">Статик JSON Дата — ES6</div>
+        <div class="row-sub">task3-data.js файлаас import ашиглан ачааллав</div>
+      </div>
+      <div class="btns">
+        <a href="task3.html" class="btn">Харах</a>
+      </div>
+    </div>
+
+    <div class="api-row">
+      <div class="row-title">Backend API — Vercel</div>
+      <div class="row-sub" style="margin-top:2px">Node.js · Express · MongoDB</div>
+      <div class="api-links">
+        <a href="https://pharmacy-backend-v2.vercel.app/api/products" target="_blank" class="btn">Бараа</a>
+        <a href="https://pharmacy-backend-v2.vercel.app/api/pharmacies" target="_blank" class="btn">Эмийн санууд</a>
+        <a href="https://pharmacy-backend-v2.vercel.app/api/ads" target="_blank" class="btn">Зар</a>
+        <a href="https://pharmacy-backend-v2.vercel.app/api/users" target="_blank" class="btn">Хэрэглэгч</a>
+      </div>
+      <div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
